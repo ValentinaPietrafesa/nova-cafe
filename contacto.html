@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova Café</title>
+    <!-- Fuentes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- WhatsApp -->
+    <link
+      rel="stylesheet"
+      href="vendors/jquery.whatsapp/venom-button.min.css"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo.png" alt="Logo Nova" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preguntas-frecuentes.html"
+                >Preguntas Frecuentes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container-width">
+        <div class="container-hero-section">
+          <h1>Nova Café</h1>
+          <h2>SIEMPRE CERCA</h2>
+          <div>
+            <p>Blends, variedades, cafés del mundo.</p>
+            <p>
+              Encontrá tu Tienda más cercana y tentate con nuestros sabores.
+            </p>
+          </div>
+          <button class="button-outlined-nova">Comprá hoy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="product-section py-5 text-center">
+      <div class="container">
+        <h2 class="mb-5 title-nova">Contactános</h2>
+        <div class="row row-cols-2 g-4">
+          <div
+            class="order-1 order-lg-0 col-12 col-lg-6 bg-black text-white p-4"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1496579274735!2d-58.45673038808937!3d-34.54976597286091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42f9ed308c9%3A0xcd4d8e2268209306!2sEscuela%20ORT%20sede%20Belgrano!5e0!3m2!1ses!2sar!4v1730233974916!5m2!1ses!2sar"
+              height="336"
+              ^
+              style="border: 0; width: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="p-3">
+              <div class="pb-3">
+                <img src="./img/geo-alt.svg" /> Corrientes 1234
+              </div>
+              <div class="pb-3">
+                <img src="./img/clock.png" class="me-2 d-inline" />Lunes a
+                domingo y feriados de 8:00 a 23:00
+              </div>
+              <div>
+                <small class="pb-2">Seguinos en nuestras redes:</small>
+                <div class="redes-contacto pt-2">
+                  <img src="./img/insta.png" /><img
+                    src="./img/tiktok.png"
+                  /><img src="./img/youtube.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            class="col-12 col-lg-6 d-flex flex-column gap-3"
+            action="gracias.html"
+          >
+            <input type="text" placeholder="Nombre" class="w-100 input-nova" />
+            <input
+              type="text"
+              placeholder="Apellido"
+              class="w-100 input-nova"
+            />
+            <input type="email" placeholder="Email" class="w-100 input-nova" />
+            <input
+              type="number"
+              placeholder="Numero de celular"
+              class="w-100 input-nova"
+            />
+
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button
+              class="btn btn-dark bg-black w-100 sc-add-to-cart"
+              data-product-id="17"
+              data-product-name="Capuccino"
+              style="height: 56px"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Whatsapp -->
+    <div id="wapp"></div>
+
+    <!-- Footer -->
+    <footer class="mt-4 d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center"
+        >
+          <img src="./img/logo.png" alt="logo nova" />
+          <ul class="d-flex flex-column flex-md-row gap-4">
+            <li>
+              <a href="quienes-somos.html" class="nav-link"> Quienes somos </a>
+            </li>
+            <li>
+              <a href="servicios.html" class="nav-link"> Servicios </a>
+            </li>
+            <li>
+              <a href="productos.html" class="nav-link"> Productos </a>
+            </li>
+            <li>
+              <a href="preguntas-frecuentes.html" class="nav-link">
+                Preguntas Frecuentes
+              </a>
+            </li>
+            <li>
+              <a href="contacto.html" class="nav-link"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="https://x.com" class="text-white mx-2">
+            <img src="./img/x.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com" class="text-white mx-2"
+            ><img src="./img/facebook.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/" class="text-white mx-2"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+        </div>
+        <hr />
+        <p class="copy d-none d-md-block">
+          © Copyright 2024, ORT Desarrollo & Programación - 1° 2° B -
+          Pietrafesa, Lozano
+        </p>
+
+        <p class="copy d-md-none">© Copyright 2024, ORT Desarrollo II</p>
+      </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="vendors/jquery-3.7.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Whatsapp -->
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <script>
+      'use strict';
+
+      $(document).ready(function () {
+        // chatear con WAPP
+        $('#wapp').venomButton({
+          phone: '541139102074',
+          chatMessage: 'Contacto',
+          message: 'Quiero hacer una consulta',
+          nameClient: 'Mi proyecto DES2',
+          showPopup: true,
+        });
+      });
+    </script>
+  </body>
+</html>

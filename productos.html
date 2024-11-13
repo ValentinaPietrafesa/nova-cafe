@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Smartcart -->
+    <link
+      rel="stylesheet"
+      href="vendors/jquery.smartcart/dist/css/smart_cart.min.css"
+    />
+
+    <!-- WhatsApp -->
+    <link
+      rel="stylesheet"
+      href="vendors/jquery.whatsapp/venom-button.min.css"
+    />
+
+    <!-- mis estilos -->
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/logo.png" alt="Logo Nova" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 200px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="preguntas-frecuentes.html"
+                >Preguntas Frecuentes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container-width">
+        <div class="container-hero-section">
+          <h1>Nova Café</h1>
+          <h2>SIEMPRE CERCA</h2>
+          <div>
+            <p>Blends, variedades, cafés del mundo.</p>
+            <p>
+              Encontrá tu Tienda más cercana y tentate con nuestros sabores.
+            </p>
+          </div>
+          <button class="button-outlined-nova">Comprá hoy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <div class="container">
+      <div class="row">
+        <h2 class="title-nova text-center pt-5">Variedad de Café</h2>
+        <div class="col-12 col-lg-10 order-lg-1 mb-3">
+          <div class="row" id="catalogo">
+            <div class="d-flex flex-column flex-md-row mt-5 gap-1">
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/espreso.png"
+                  class="card-img-top"
+                  alt="Espresso"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Espresso
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    Es un café con un sabor robusto y cuerpo completo, perfecto
+                    para los amantes del café.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="12" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="12"
+                    data-product-name="Espresso"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/americano.png"
+                  class="card-img-top"
+                  alt="Americano"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Americano
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    Ideal para quienes quieren un espresso más suave.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="13" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="13"
+                    data-product-name="Americano"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/capuccino.png"
+                  class="card-img-top"
+                  alt="Capuccino"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Capuccino
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    Combina espresso con leche al vapor y espuma.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="14" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="14"
+                    data-product-name="Capuccino"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="catalogo">
+            <div class="d-flex flex-column flex-md-row mt-5 gap-1">
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/product-late.png"
+                  class="card-img-top"
+                  alt="Espresso"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Latte
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    Es una bebida suave y cremosa que consiste en un espresso
+                    combinado con una mayor cantidad de leche al vapor y una
+                    fina capa de espuma.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="15" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="15"
+                    data-product-name="Espresso"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/product-mocha.png"
+                  class="card-img-top"
+                  alt="Mocha"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Mocha
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    Ees una deliciosa combinación de espresso, chocolate y leche
+                    al vapor, coronada con crema batida y un toque de cacao en
+                    polvo.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="16" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="16"
+                    data-product-name="Americano"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="card sc-product-item"
+                style="min-height: 495px; flex: 1"
+              >
+                <img
+                  data-name="product_image"
+                  src="./img/product-mocchiato.png"
+                  class="card-img-top"
+                  alt="mocchiato"
+                />
+                <div class="card-body">
+                  <h5
+                    class="card-title text-start"
+                    style="font-size: 25px"
+                    data-name="product_name"
+                  >
+                    Macchiato
+                  </h5>
+                  <p class="card-text text-start" data-name="product_desc">
+                    El café "manchado", es una bebida simple y elegante que
+                    consiste en un espresso "manchado" con una pequeña cantidad
+                    de espuma de leche.
+                  </p>
+                  <input name="product_price" value="2990.50" type="hidden" />
+                  <input name="product_id" value="17" type="hidden" />
+                  <button
+                    class="btn btn-dark w-100 sc-add-to-cart"
+                    data-product-id="17"
+                    data-product-name="Capuccino"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-2 order-md-2 mb-3 mt-5">
+          <div id="carrito"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wapp"></div>
+
+    <!-- Footer -->
+    <footer class="mt-4 d-flex justify-content-center align-items-center">
+      <div class="container text-center">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center"
+        >
+          <img src="./img/logo.png" alt="logo nova" href="index.html" />
+          <ul class="d-flex flex-column flex-md-row gap-4">
+            <li>
+              <a href="quienes-somos.html" class="nav-link"> Quienes somos </a>
+            </li>
+            <li>
+              <a href="servicios.html" class="nav-link"> Servicios </a>
+            </li>
+            <li>
+              <a href="productos.html" class="nav-link"> Productos </a>
+            </li>
+            <li>
+              <a href="preguntas-frecuentes.html" class="nav-link">
+                Preguntas Frecuentes
+              </a>
+            </li>
+            <li>
+              <a href="contacto.html" class="nav-link"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <a href="https://x.com/home" class="text-white mx-2">
+            <img src="./img/x.png" alt="" />
+          </a>
+          <a href="https://www.facebook.com" class="text-white mx-2"
+            ><img src="./img/facebook.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/" class="text-white mx-2"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+        </div>
+        <hr />
+        <p class="copy d-none d-md-block">
+          © Copyright 2024, ORT Desarrollo & Programación - 1° 2° B -
+          Pietrafesa, Lozano
+        </p>
+
+        <p class="copy d-md-none">© Copyright 2024, ORT Desarrollo II</p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery-3.7.1.min.js"></script>
+
+    <!-- smartcart -->
+    <script src="vendors/jquery.smartcart/dist/js/jquery.smartCart.min.js"></script>
+
+    <!-- WhatsApp -->
+    <script src="vendors/jquery.whatsapp/venom-button.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- productos -->
+    <script src="js/productos.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      'use strict';
+
+      $(document).ready(function () {
+        // carrito
+        $('#carrito').smartCart({
+          cartItemTemplate:
+            '<div class="d-flex flex-column justify-content-center align-items-center"><div><img class="img-fluid" src="{product_image}" /></div><div><h4 class="list-group-item-heading">{product_name}</h4></div></div>',
+        });
+
+        // chatear con WAPP
+        $('#wapp').venomButton({
+          phone: '541139102074',
+          chatMessage: 'Contacto',
+          message: 'Quiero hacer una consulta',
+          nameClient: 'Mi proyecto DES2',
+          showPopup: true,
+        });
+      });
+    </script>
+  </body>
+</html>
